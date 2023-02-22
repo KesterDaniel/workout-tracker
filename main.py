@@ -16,7 +16,8 @@ nutritionix_exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exe
 
 # HEADERS
 sheety_header = {
-    "Content-Type": "application/json"
+    "Content-Type": "application/json",
+    "Authorization": os.getenv("AUTHORIZATION")
 }
 
 nutritionix_headers = {
